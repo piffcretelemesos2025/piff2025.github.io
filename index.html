@@ -1,1172 +1,373 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<html>
-	<head>
-		<title>Piff Crete Lemesos 2025</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/new.jpg">
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- Add this in the <head> section -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Add this before the closing </body> tag -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-			
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			body {
-			  font-family: Arial, sans-serif;
-			}
-		  
-			#piff {
-    padding: 20px;
-    text-align: center;
-}
-.thumbnail {
-    width: 150px; /* Thumbnail size */
-    height: auto;
-    cursor: pointer;
-    border-radius: 8px; /* Rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
-}
+    <meta
+        name="description"
+        content="A modern responsive HTML5 website template."
+    >
 
-.thumbnail:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
-}
+    <title>Antiratsistiko</title>
 
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/imgs/favicon.ico"
+    >
 
-.modal-content {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center; /* Center-align text */
-    max-width: 90%;
-    width: 400px;
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
-img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain the aspect ratio */
-    object-fit: contain; /* Ensure the entire image fits within the container */
-    border-radius: 8px; /* Add rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
-}
+<body>
 
-.thumbnail {
-    width: 100%; /* Ensure thumbnails are responsive */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Prevent cropping */
-    border-radius: 8px; /* Rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
-}
-.modal-content img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
+   
+    <header class="site-header" id="top">
+        <nav class="navbar container" aria-label="Main navigation">
 
-.modal-content p {
-    font-size: 1em;
-    color: #333;
-}
+            <a href="#top" class="logo">
+				<img src="assets/imgs/1.png" alt="logo">
+                <span>Antiratsistiko</span>
+            </a>
 
-.modal-content button {
-    background: red;
-    color: white;
-    border: none;
-    padding: 0px 5px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-.modal-content button:hover {
-    background: darkred;
-}
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .modal-content {
-        width: 90%; /* Adjust modal width for smaller screens */
-        padding: 15px; /* Reduce padding */
-    }
+            <div class="nav-menu" id="primary-navigation">
+                <a href="#home">Home</a>
+                
+                <a href="#about">About</a>
+                <a href="contact.html">Contact</a>
 
-    .modal-content p {
-        font-size: 0.9em; /* Reduce font size for smaller screens */
-    }
+                <a href="#features" class="nav-button">
+                    prohgoymena
+                </a>
+            </div>
 
-    .modal-content button {
-        font-size: 0.9em; /* Reduce button font size */
-        padding: 8px 12px; /* Adjust button padding */
-    }
-}
+        </nav>
+    </header>
 
-@media screen and (max-width: 480px) {
-    .modal-content {
-        width: 95%; /* Further adjust modal width for very small screens */
-        padding: 10px; /* Reduce padding further */
-    }
 
-    .modal-content p {
-        font-size: 0.8em; /* Further reduce font size */
-    }
+    <main>
 
-    .modal-content button {
-        font-size: 0.8em; /* Further reduce button font size */
-        padding: 6px 10px; /* Adjust button padding */
-    }
-}
+       
+        <section class="hero" id="home">
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .modal-content {
-        width: 90%; /* Adjust modal width for smaller screens */
-    }
-}
+            <div class="hero-background"></div>
 
-#piff .content {
-    display: flex;
-    flex-direction: column; /* Stack items vertically by default */
-    align-items: center;
-    gap: 20px; /* Add spacing between items */
-}
+            <div class="container hero-content">
 
-#piff ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0;
-    margin: 0;
-}
+                <div class="hero-text reveal">
 
-#piff ul li {
-    margin: 10px 0;
-}
+                    <div class="eyebrow">
+                        <span></span>
+                        Build something better
+                    </div>
 
-#piff img {
-    max-width: 100%; /* Ensure images scale to fit their container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Add rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
-}
+                    <h1>
+                        Agios Nikolaos Festival 
+                        <strong>2026</strong>
+                    </h1>
 
-#piff img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
+                    <p>
+							eimaste edw kai pali
+                    </p>
 
-@media screen and (min-width: 768px) {
-    #piff .content {
-        flex-direction: row; /* Arrange items side by side on larger screens */
-        justify-content: center;
-    }
+                    <div class="hero-buttons">
+                        <a href="#features" class="button button-primary">
+                            previous festivals 
 
-    #piff ul {
-        display: flex; /* Display list items in a row */
-        gap: 20px; /* Add spacing between list items */
-    }
-}
+                            <span>→</span>
+                        </a>
 
-@media screen and (max-width: 480px) {
-    #piff img {
-        max-width: 90%; /* Reduce image size for smaller screens */
-    }
-
-    #piff p {
-        font-size: 0.9em; /* Adjust font size for smaller screens */
-    }
-}
-		
-		/* Fixed hamburger menu styles */
-		.hamburger {
-			display: none;
-		}
-		#prot img {
-    max-width: 100%; /* Ensure the image scales to fit its container */
-    height: auto;    /* Maintain the aspect ratio */
-    display: block;  /* Prevent inline spacing issues */
-    margin: 0 auto;  /* Center the image horizontally */
-}
-
-ul {
-    list-style: none; /* Remove default bullet points */
-    padding: 0;
-    margin: 0;
-    text-align: center; /* Center the content */
-}
-
-ul li {
-    margin: 10px 0; /* Add spacing between list items */
-}
-
-ul p {
-    font-size: 1.2em; /* Adjust font size for better readability */
-    margin: 0;
-    transition: font-size 0.3s ease, color 0.3s ease; /* Smooth transitions */
-}
-
-.responsive-img {
-    max-width: 100%; /* Ensure the image scales to fit its container */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 8px; /* Add rounded corners for smoothness */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
-}
-
-.responsive-img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
-
-@media screen and (max-width: 768px) {
-    ul p {
-        font-size: 1em; /* Adjust font size for smaller screens */
-    }
-
-    .responsive-img {
-        max-width: 90%; /* Reduce image size for smaller screens */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    ul p {
-        font-size: 0.9em; /* Further adjust font size for very small screens */
-    }
-
-    .responsive-img {
-        max-width: 80%; /* Further reduce image size for very small screens */
-    }
-}
-
-/* Section Styling */
-#piff {
-    padding: 40px 20px; /* Add padding around the section */
-    background-color: #f9f9f9; /* Light background for better contrast */
-    text-align: center; /* Center-align the content */
-}
-
-#piff .major h2 {
-    font-size: 2em; /* Increase the font size of the heading */
-    color: #333; /* Darker text color for better readability */
-    margin-bottom: 20px;
-    line-height: 1.5; /* Improve line spacing */
-}
-
-#piff .content {
-    display: flex;
-    flex-direction: column; /* Stack items vertically by default */
-    align-items: center;
-    gap: 30px; /* Add spacing between items */
-}
-.content img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain the aspect ratio */
-    object-fit: contain; /* Ensure the entire image fits within the container */
-    border-radius: 8px; /* Add rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
-}
-
-.content img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .content img {
-        max-width: 90%; /* Reduce image size for smaller screens */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .content img {
-        max-width: 80%; /* Further reduce image size for very small screens */
-    }
-}
-
-/* List Styling */
-#piff ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-#piff ul li {
-    margin: 20px 0; /* Add spacing between list items */
-}
-
-#piff ul li p {
-    font-size: 1.2em; /* Adjust font size for better readability */
-    margin: 10px 0;
-    color: #555; /* Softer text color */
-}
-
-/* Image Styling */
-#piff .content img {
-    width: 321px; /* Set a fixed width for all images */
-    height: 420px; /* Set a fixed height for all images */
-    object-fit: cover; /* Ensure images fit within their container without distortion */
-    border-radius: 8px; /* Add rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
-}
-
-#piff .content img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
-
-#piff .content {
-    display: flex; /* Arrange items in a row */
-    justify-content: center; /* Center the images horizontally */
-    align-items: center; /* Align items vertically */
-    gap: 20px; /* Add spacing between images */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    #piff .content {
-        gap: 20px; /* Reduce gap for smaller screens */
-    }
-
-    #piff ul li p {
-        font-size: 1em; /* Adjust font size for smaller screens */
-    }
-
-    #piff .content div img {
-        width: 150px; /* Reduce image size for smaller screens */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #piff .content {
-        flex-direction: column; /* Stack items vertically on very small screens */
-        gap: 15px; /* Reduce gap further */
-    }
-
-    #piff .content div img {
-        width: 100%; /* Full width for smaller screens */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #prot img {
-        max-width: 80%; /* Further reduce the width for very small screens */
-    }
-}
-		
-		@media screen and (max-width: 736px) {
-			#nophoto{
-				display: none;
-			}
-			#prot img {
-        		max-width: 90%; /* Reduce the width for smaller screens */
-		    }
-
-			.hamburger {
-				display: block;
-				position: fixed;
-				top: 20px;
-				right: 20px;
-				z-index: 1000;
-				background-color: rgba(0, 0, 0, 0.7);
-				color: white;
-				border: none;
-				border-radius: 5px;
-				padding: 10px 15px;
-				font-size: 1.5em;
-				cursor: pointer;
-				transition: background-color 0.3s ease;
-			}
-			
-			.hamburger:hover {
-				background-color: rgba(0, 0, 0, 0.9);
-			}
-			
-			#mobileMenu {
-				display: none;
-				position: fixed;
-				top: 70px;
-				right: 20px;
-				background-color: rgba(0, 0, 0, 0.9);
-				border-radius: 5px;
-				padding: 15px;
-				z-index: 999;
-				width: 250px;
-				max-width: 80vw;
-				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-			}
-			
-			#mobileMenu.active {
-				display: block;
-			}
-			
-			#mobileMenu li {
-				list-style: none;
-				margin-bottom: 15px;
-			}
-			
-			#mobileMenu li:last-child {
-				margin-bottom: 0;
-			}
-			
-			#mobileMenu a {
-				color: white;
-				text-decoration: none;
-				display: block;
-				padding: 5px 0;
-				transition: color 0.3s ease;
-			}
-			
-			#mobileMenu a:hover {
-				color: #ccc;
-			}
-		}
-		.swiper-slide img {
-    width: 300px; /* Set a fixed width for all images */
-    height: 200px; /* Set a fixed height for all images */
-    object-fit: cover; /* Ensure images fit within their container without distortion */
-    border-radius: 8px; /* Add rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
-    margin: 0 auto; /* Center the images horizontally */
-}
-
-.swiper-slide img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .swiper-slide img {
-        width: 250px; /* Reduce image size for smaller screens */
-        height: 150px; /* Adjust height proportionally */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .swiper-slide img {
-        width: 200px; /* Further reduce image size for very small screens */
-        height: 130px; /* Adjust height proportionally */
-    }
-}
-span.image1 img {
-    width: 100%; /* Make the image responsive */
-    max-width: 400px; /* Set a maximum width for the image */
-    height: 200px; /* Set a fixed height to make it rectangular */
-    object-fit: cover; /* Ensure the image fills the container without distortion */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    display: block; /* Prevent inline spacing issues */
-    margin: 0 auto; /* Center the image horizontally */
-}
-
-		.mobile-action-button {
-    position: fixed; /* Fix the button at a specific position */
-    top: 120px;       /* Distance from the top of the page */
-    left: 50%;       /* Center the button horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    z-index: 1000;   /* Ensure it appears above other elements */
-    background-color: #ff4d4d; /* Button background color */
-    color: white;    /* Button text color */
-    padding: 5px 10px; /* Reduce padding for a smaller button */
-    border: none;    /* Remove border */
-    border-radius: 33px; /* Smaller rounded corners */
-    font-size: 12px; /* Reduce font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    text-decoration: none; /* Remove underline for links */
-    display: inline-block; /* Ensure proper button styling */
-	width: 300px; /* Ensure the button width adjusts to its content */
-    height: 30px; /* Ensure the height adjusts to its content */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-}
-
-.mobile-action-button:hover {
-    background-color: #e60000; /* Darker background on hover */
-}
-.row-container {
-    display: flex; /* Use Flexbox to arrange items in a row */
-    align-items: center; /* Align items vertically in the center */
-    justify-content: center; 
-    gap: 10px; 
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-}
-.image-text {
-    display: flex;
-    flex-direction: column; /* Stack image and text vertically */
-    align-items: center; /* Center-align the content */
-    text-align: center; /* Center-align the text */
-}
-.row-container .image1 img {
-    width: 340px; /* Set a fixed width for the images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Add rounded corners */
-    object-fit: cover; /* Ensure the image fits within its container */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
-}
-
-.row-container .image1 img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
-
-.row-container .actions {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    list-style: none; /* Remove bullet points */
-}
-
-.row-container .actions .button {
-    background-color: #ff4d4d; /* Button background color */
-    color: white; /* Button text color */
-    padding: 10px 15px; /* Add padding to the button */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Add rounded corners */
-    text-decoration: none; /* Remove underline */
-    font-size: 14px; /* Adjust font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-}
-
-.row-container .actions .button:hover {
-    background-color: #e60000; /* Darker background on hover */
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .row-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center; /* Center items horizontally */
-    }
-
-    .row-container .image1 img {
-        width: 100%; /* Make images responsive */
-        max-width: 200px; /* Limit the maximum width */
-    }
-
-    .row-container .actions .button {
-        width: 100%; /* Make the button full width */
-        text-align: center; /* Center-align the text */
-    }
-}
-		</style>
-		
-	</head>
-	<body class="is-preload" font-family="KenokyLight">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header" class="alt">
-						
-						<span class="logo"><img src="images/1.png" alt="" style=" width: 400px; height: 400px; "/></span>
-						<h1 style="font-family: Inter;">2o Φεστιβάλ Ανεξάρτητου <br>
-							Παλαιστινιακού Κινηματογράφου  2025</h1>
-						<h2>13-14-15 Ιουνίου</h2>
-						<h2>Λεμεσός - Άγιος Νικόλαος - Χανιά </h2>
-						<!-- <a href="fund.html" target="_blank" class="mobile-action-button"> -->
-							<a href="https://youtu.be/f9nuEyCPIlc" target="_blank" class="mobile-action-button">
-								<i class="fa fa-heart"> Δείτε τα βίντεα του φεστιβάλ </i>
-								</i>
+                        <a href="#contact" class="button button-secondary">
+                            Contact us
+							<span>→</span>
 						</a>
-						<button class="hamburger" onclick="toggleMobileMenu()">☰</button>
+                    </div>
 
-						<!-- Mobile Menu (hidden by default)
-						<div id="mobileMenu" class="mobile-nav">
-							<li><a href="elements.html" class="active">Το Πρόγραμα</a></li>
-							<li><a href="#who" class="active">Γνωρίστε μας</a></li>
-							<li><a href="#which" class="active">Αφιερωμένο στον Dorgham Qrieqa</a></li>
-							<li><a href="#piff">Oι Προβολές του Φεστιβάλ</a></li>
-							<li><a href="palestine.html">Με την Παλαιστίνη</a></li>
-							<li><a href=#money>Ανοιχτή πρόσβαση</a></li>
-							
-						</div>
-						
-						<div class="album swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<img class="img img-big" src="images/1.jpg" alt="Image 1" />
-								</div>
-								<div class="swiper-slide">
-									<img class="img" src="images/cin.jpg" alt="Image 2" />
-								</div>
-								<div class="swiper-slide">
-									<img class="img img-last" src="images/2.jpg" alt="Image 3" />
-								</div>
-								<div class="swiper-slide">
-									<img class="img img-big img-last" src="images/3.jpg" alt="Image 4" />
-								</div>
-								<div class="swiper-slide">
-									<img class="img img-big img-last" src="images/lem1.jpg" alt="Image 4" />
-								</div>
-								<div class="swiper-slide">
-									<img class="img img-big img-last" src="images/45.jpg" alt="Image 4" />
-								</div>
-								<div class="swiper-slide">
-									<img class="img img-big img-last" src="images/lem2jpeg.jpg" alt="Image 4" />
-								</div>
+                    <div class="hero-note">
+                        <span class="check">✓</span>
+                        Check out our previous festivals
+                    </div>
 
-							</div>
-						
-							<!-- Add navigation buttons -->
-							<div class="swiper-button-next"></div>
-							<div class="swiper-button-prev"></div>
-						
-							<!-- Add pagination -->
-							<div class="swiper-pagination"></div>
-						</div>
-						
-					</header>
-					
-				<!-- Nav -->
-				
-					<nav id="nav">
-						<ul>
-							<li><a href="elements.html" class="active">Το Πρόγραμα</a></li>
-							<li><a href="#who" class="active">Γνωρίστε μας</a></li>
-							<li><a href="#which" class="active">Αφιερωμένο στον Dorgham Qrieqa</a></li>
-							<li><a href="#piff">Oι Προβολές του Φεστιβάλ</a></li>
-							<li><a href="palestine.html">Με την Παλαιστίνη</a></li>
-							<li><a href=#money>Ανοιχτή πρόσβαση</a></li>
-							
-							
-						</ul>
-					</nav>
+                </div>
 
-				<!-- Main -->
-					<div id="main">
+                <div class="hero-visual reveal">
 
-						<!-- Introduction -->
-						<section  class="main">
-							<div class="spotlight">
-								<div class="content">
-									<header class="major">
-										<h2>Το Πρόγραμμα του Φεστιβάλ</h2>
-									</header>
-									
-									<div class="row-container">
-										<div class="image-text">
-											<p>To πρόγραμμα του Φεστιβάλ για<br>
-												Άγιο Νικόλαο και Χανιά</p>
-											<span class="image1">
-												<a href="crete.pdf" target="_blank">
-													<img src="images/agchprpng.png" alt="Image 1" /></span>
-												</a>
-											
-										</div>
-										<div class="image-text">
-											<p>Το πρόγραμμα του Φεστιβάλ για <br>
-												Λεμεσό</p>
-											<span class="image1">
-												<a href="lem.pdf" target="_blank">
-													<img src="images/lmpr.png" alt="Image 2" /></span>
-												</a>
-											
-										</div>
-									</div>
-								</div>
-								
-							</div>
-							<ul class="">
-								<li><h2>Οι Χώροι προβολής ανα πόλη</h2></li>
-									<li> <a href="https://www.google.com/maps/place/Christina/@35.191777,25.7138358,17z/data=!3m1!4b1!4m6!3m5!1s0x14908170b1628049:0x9c9754c018f51b12!8m2!3d35.191777!4d25.7164161!16s%2Fg%2F11c55rz9k3?entry=ttu&g_ep=EgoyMDI1MDUyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-										Άγιος Νικόλαος - Κινηματοθέατρο Χριστίνα</a> </li>
-									<li> <a href="https://www.google.com/maps/place/Cultural+Centre+Of+Chania/@35.5118187,24.026476,17z/data=!3m1!4b1!4m6!3m5!1s0x149c7dc0178421db:0x56c2c1e9719614e9!8m2!3d35.5118187!4d24.026476!16s%2Fg%2F11b6ybvsrj?entry=ttu&g_ep=EgoyMDI1MDUyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-										Χανιά - Πνευματικό Κέντρο </a> </li>
-									<li> <a href="https://www.google.com/maps/dir//Enoseos,+Limassol+3041,+Cyprus/@34.6760852,32.9592059,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14e73303900fbc81:0xf03a7a36679c5c96!2m2!1d33.0416142!2d34.6760915?entry=ttu&g_ep=EgoyMDI1MDUyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-										Λεμεσός - neMe Art Center</a>
-										και
-										 <a href="https://www.google.com/maps/dir//M2FV%2B7CW,+Genethliou+Mitellla,+Limassol+3036,+Cyprus/@34.6731977,32.9611824,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14e73302e71e32e5:0x8b9d9b1e08087b59!2m2!1d33.0435836!2d34.6732254?entry=ttu&g_ep=EgoyMDI1MDUyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-											Vinegar Factory (Ξυδάδικο)</a>  </li>	
-							</ul>
-							<div class="row-container">
-							<ul>
-								<li><h3>
-									<a href="elements.html#movies">
-										Δείτε εδω τα trailer των ταινιών  
-									</a>
-								</h3>
-								</li>
-							</ul>
-							</div>
-						</section>
-						<section id="whυ" class="main">
-							<div class="spotlight">
-								<div class="content">
-									<header class="major">
-										<h2>Το Φεστιβάλ</h2>
-									</header>
-									<p style="font-size: medium;">Καλώς ήρθατε στο 2ο Φεστιβάλ Ανεξάρτητου Παλαιστινιακού Κινηματογράφου,<br>(Piff :  Palestinian Independent Film Festival )<br>
-										 έναν ξεχωριστό πολιτιστικό φάρο που φωτίζει τις περίπλοκες αφηγήσεις της Παλαιστίνης.<br>
-						 Αυτή η ανεξάρτητη αντι-εμπορική πρωτοβουλία είναι κάτι
-περισσότερο από ένα απλό φεστιβάλ κινηματογράφου. Eίναι ένα ταξίδι μέσα από το φακό
-Παλαιστινίων σκηνοθετών που έχουν αποσπάσει επαίνους παγκοσμίως. Η προσεκτικά
-επιμελημένη επιλογή μας περιλαμβάνει ταινίες μικρού και μεγάλου μήκους, καθώς και
-ντοκιμαντέρ, καθένα από τα οποία απηχεί τις αυθεντικές φωνές και τις ιστορίες από την
-καρδιά της Παλαιστίνης.<br>
-Στον πυρήνα αυτής της εκδήλωσης βρίσκεται η φιλοδοξία μας να φέρουμε στο προσκήνιο
-τις πολύπλευρες πραγματικότητες που βιώθηκαν στη Γάζα, τη Δυτική Όχθη και τα
-κατεχόμενα εδάφη του 1948. <br>
-Οι ταινίες δεν αποτελούν απλώς καλλιτεχνικές εκφράσεις.
-</p>
-									<ul class="actions">
-										<li><a  href="festival.html"  class="button">Διαβάστε περισσότερα</a></li>
-									</ul>
-								</div>
-								<video src="images/vid.mp4" 
-											autoplay muted loop style=" 
-												width: 25%; /* Set width to 50% of its container */
-												height: 50%; /* Maintain aspect ratio */
-												border-radius: 8px; /* Add rounded corners */
-												display: block; /* Ensure proper alignment */
-												margin: 0 auto; /* Center the video horizontally */" 
-												alt="Video preview">
-										</video>
-							</div>
-						</section>
-							<section id="who" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Γνωρίστε μας</h2>
-										</header>
-										<p style="font-size: medium;">
-											Πίσω από την επιτυχημένη διοργάνωση του Φεστιβάλ βρίσκονται άνθρωποι και συλλογικότητες που λειτουργούν με βάση την ισότητα και την 
-											αλληλεγγύη,
-δρουν και συμπράτουν από κοινού στις τρεις αυτές πόλεις Λεμεσός, Άγιος Νικόλαος και Χανιά.<br> 
-Εμπνεύστρια της ιδέας, είναι η Παλαιστίνια εικαστικός <a href="https://web.facebook.com/61551916739831/posts/122171782022063891/?mibextid=WC7FNe&rdid=U6AZOooWcuDlQEo1#" > Jafra Abu Zoulouf </a> που ζει στη Λεμεσό τα τελευταία χρόνια και σθεναρά προσπαθεί να διαδώσει το τι βιώνει ο
-λαός της μέσω της 7 ης τέχνης. Η ίδια εργάζεται ώστε να εξασφαλίζει τα πνευματικά δικαιώματα των
-δημιουργών και το Φεστιβάλ να παραμένει ανεξάρτητο και χωρίς καμία χρηματοδότηση πέραν των
-εθελοντικών εισφορών. </p>
-										<ul class="actions">
-											<li><a  href="aboutus.html"  class="button">Διαβάστε περισσότερα</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/45.jpg" alt="" /></span>
-								</div>
-							</section>
+                    <div class="visual-card">
 
-							
-							<section id="which" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Αφιερωμένο στον Dorgham Qrieqa</h2>
-										</header>
-										<p style="font-size: medium;">
-											Με μεγάλη θλίψη και ραγισμένες καρδιές θρηνούμε την απώλεια του <br>
-											<strong>Dorgham Qrieqa και της συζύγου του Aya Qudra</strong>
-											<br>
- οι οποίοι μαρτύρησαν κατά τη μεγάλη επίθεση που έγινε
-αμέσως μετά την κατάρρευση της εκεχειρίας.<br>
-Ο Dorgham ήταν ένας φίλος, ένας προικισμένος καλλιτέχνης, ένας καταπληκτικός
-άνθρωπος και ακτιβιστής που αφιέρωσε τη ζωή του στο να βοηθήσει και να φέρει χαρά
-στα παιδιά της Γάζας αυτούς τους τελευταίους σκοτεινούς 17 μήνες, και για εμάς είναι
-ένας πραγματικός ήρωας!<br>
-Θα σε θυμόμαστε πάντα Dorgham και είμαστε ευγνώμονες που σε γνωρίζουμε.<br>
-Είθε η ψυχή σου να αναπαύεται εν ειρήνη ♥️<br>
-<h3>Αυτό το Φεστιβάλ είναι αφιερωμένο στην μνήμη του.</h3>
-</p>
-										<!-- <ul class="actions">
-											<li><a  href="festival.html"  class="button">Διαβάστε περισσότερα</a></li>
-										</ul> -->
-									</div>
-									<span class="image"><img src="images/qur.jpg" alt="" /></span>
-								</div>
-							</section>
-						<!-- First Section -->
-							<section id="piff" class="main special">
-								<header class="major">
-									<h2>Αναλυτικά οι ταινίες του Φεστιβάλ</h2>
-									</header>
-										<div class="content">
-											<h3>   </h3>
-											<ul style="list-style: none; padding: 0; margin: 0; text-align: center;">
-												<li>
-													
-													<ul style="list-style: none; padding: 0; margin: 0;">
-														<li>
-															<p style="font-size: medium; margin: 10px 5;">
-																
-																<span class="logo">
-																	<a href="https://drive.google.com/file/d/1hd1tW8zLWisCQas2zKyDzcOZ1HDhJx1f/preview" onclick="playMovie(); return false;">
-																		 <img  src="images/jtrailer.png" alt="" >
-																		  	 
-																	</a>
-																	<p style="font-size: medium; margin: 10px 0;">
-																	 <a href="elements.html#jj">Janin Jenin <br> 2024-Σκηνοθεσία : Muhammad Bakri <br>
-																		Διαβάστε περισσότερα εδώ</a>
-																	
-																</p>
-															</p>
-														
-														</li>
-													</ul>
-												</li>
-												<li>
-													
-													<ul style="list-style: none; padding: 0; margin: 0; " >
-														<li>
-															
-															<div style="display: flex; justify-content: flrx; gap: 20px; align-items: center;">
-																<div>
-																	<p style="font-size: medium; margin: 10px 0;">
-																
-																	<span>
-																	<a href="https://drive.google.com/file/d/1JN0jbdfpJqSii1z6bkA6CINwYMxWxb_6/preview" onclick="playMovie(); return false;">
-																		<img src="images/bbt.jpg" alt="Image 1" ></a>
-																	<a href="elements.html#bbt">
-																		<p style="font-size: medium; margin: 10px 0;">Bye Bye Tiberias <br> 2023-Σκηνοθεσία : Lina Soualem <br> Διαβάστε περισσότερα εδώ</p>	
-																	</a>
-																	
-																</p>
-																	</span>
-																	<span>
-																		
-																	<a href="https://drive.google.com/file/d/1iy_bVqx2wDZmiYuXfi8EkYrItt3LsBYY/preview" onclick="playMovie(); return false;">
-																		<img src="images/lyd .jpg" alt="Image 2" > </a>
-																		<p style="font-size: medium; margin: 10px 0;">
-																			<a href="elements.html#lyd">Lyd 2024<br> Σκηνοθεσία :  Rami Younis & Sarah Ema Friedland <br>
-																			   Διαβάστε περισσότερα εδώ</a>
-																		   
-																	   </p>
-																	
-																</div>
-															</div>
-															</p>
-														</li>
-													</ul>
-												</li>
-												<li>
-													
-													<ul style="list-style: none; padding: 0; margin: 0;">
-														<li>
-															<p style="font-size: medium; margin: 10px 5;">
-																
-																<span class="logo">
-																	<a href="https://drive.google.com/file/d/1sK9PoyhdwettAvRi_P5T2C6zip7cgPm8/preview" onclick="playMovie(); return false;">
-																		<img  src="images/stp.jpg" alt="" >
-																		<p style="font-size: medium; margin: 10px 0;">
-																			<a href="elements.html#stp">
-																			A state of passion 2024 
-																			<br> Σκηνοθεσία : Carol Mansour & Muna Khailidi<br>
-																			Διαβάστε περισσότερα εδώ</p>
-																			</a>
-																		</p>
-																	</a>
-																	</span>
-															</p>
-															<!-- <a href="elements.html"> Ομλιιτες ζοι + ταδε -->
-															</a>
-														</li>
-													</ul>
-												</li>
-											</ul>
-										
-											<div class="content">
-												<h1>Οι κεντρικοί ομιλητές </h1>
-												<ul style="list-style: none; padding: 0; margin: 0; text-align: center;">
-													
-														
-														<ul style="list-style: none; padding: 0; margin: 0;">
-															<li>
-																<div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
-																	
-																			<img src="images/Nasim Alatras.jpg" alt="Image 1" class="thumbnail" onclick="openModal('modal1'); return false;">
-																</div>
-																<h2> Nasim Alatras</h2>
-															</li>
-														</ul>
-											
-												
-														<ul style="list-style: none; padding: 0; margin: 0;">
-														<li>
-															<div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
-																		
-																<img src="images/Zoie Sgourou.jpg" alt="Image 2" class="thumbnail" onclick="openModal('modal2'); return false;">
-															
-														</div>
-														<h2> Zoie Sgourou</h2>
-															</li>
-														</ul>
-														<ul style="list-style: none; padding: 0; margin: 0;">
-													
-															<li>
-																<div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
-																	<img src="images/Mirei El Sayed.jpg" alt="Image 3" class="thumbnail" onclick="openModal('modal3'); return false;">
-																</div>
-																<h2>Mirei El Sayed</h2>
-															</li>
-															
-														</ul>
-														
-													
-												</ul>
-											</div>
-											
-											<!-- Modal Structure -->
-											<div id="modal1" class="modal">
-												<div class="modal-content">
-													<img src="images/Nasim Alatras.jpg" alt="Image 1">
-													<p>O Nasim Alatras γεννήθηκε στο ǹμμάν της Ιορδανίας το 1965. <br>
-														Είναι
-														Παλαιστίνιος δημοσιογράφος και αρθρογράφος. Ǽργάστηκε για σειρά
-														ετών στην εφημερίδα ελευθεροτυπία.<br>
-														Πρωτοήρθε στην Ελλάδα το 1983 για σπουδές στη Βιομηχανική Σχολή
-														Θεσσαλονίκης. Υπήρξε ενεργό μέλος του Δ.Σ. της Γενικής Ένωσης
-														Παλαιστίνιων Φοιτητών και συνιδρυτής της πρώτης
-														Ελληνοπαλαιστινιακής επιτροπής Υποστήριξης της Πρώτης Ιντιφάντα.
-														Έχει μεταφράση στα ελληνικά το 1999 δύο νουβέλες του Παλαιστίνιου
-														συγγραφέα Γασάν Ȁαναφάνι. Είναι παραγωγός του ντοκιμαντέρ <Br>"Γάζα Eρχόμαστε" για λογαριασμό του αραβικού τηλεοπτικού σταθμού αλτζαζίρα και του ντοκιμαντερ «ο ασκός του αιόλου».<br>
-														</p>
-													<button onclick="closeModal('modal1')">Close</button>
-												</div>
-											</div>
-											
-											<div id="modal2" class="modal">
-												<div class="modal-content">
-													<img src="images/Zoie Sgourou.jpg" alt="Image 2">
-													<p>Η Ζωή Ζγουρού είναι Ελληνίδα σκηνοθέτιδα. Σπούδασε
-														ιστορία κινηματογράφου στο Λονδίνο και ολοκλήρωσε
-														την κινηματογραφική της εκπαίδευση στην Αθήνα.
-														Ξεκινησε την καριέρα της ως πρώτη βοηθός
-														σκηνοθέτη, στην συνέχεια σκηνοθέτησε δύο ταινίες
-														μικρού μήκους και την τηλεοπτική σειρά ´Μια νύχτα του
-														Αυγούστου’ για τον εθνικό ραδιοτηλεοπτικό φορέα της
-														Ελλάδας, την ΕΡΤ. Έχει συμμετάσχει σε πολλές
-														διεθνείς παραγωγές που γυρίστηκαν στην Ǽλλάδα και
-														έχει τη δική της εταιρεία παραγωγής. Σε τακτά χρονικά
-														διαστήματα διευθύνει masterclasses για ηθοποιούς και
-														επαγγελματίες του κινηματογράφου</p>
-													<button onclick="closeModal('modal2')">Close</button>
-												</div>
-											</div>
-											
-											<div id="modal3" class="modal">
-												<div class="modal-content">
-													<img src="images/Mirei El Sayed.jpg" alt="Image 3">
-													<p>H Mιρέιγ eλ Σαίντ, ελληνοπαλαιστινιακής καταγωγής, είναι
-														πτυχιούχος Αρχιτέκτων Εσωτερικών Χώρων και ενεργό μέλος της
-														Παλαιστινιακής Παροικίας Ελλάδας, με ιδιαίτερη έμφαση στην
-														ανθρωπιστική δράση. Έχει διοργανώσει και συμμετάσχει σε
-														εκδηλώσεις που στοχεύουν στην ενημέρωση του κοινού σχετικά
-														με την κατάσταση στην Παλαιστίνη, ενώ έχει αναλάβει καμπάνιες
-														αλληλεγγύης για την υποστήριξη των ανθρώπων στη Γάζα.
-														Ανάμεσα στις πρωτοβουλίες της, ξεχωρίζει η επιμέλεια της
-														φωτογραφικής έκθεσης με τίτλο “Is Anyone Alive? The Language
-														of Communication in Gaza”, με φωτογραφίες από φωτορεπόρτερ
-														και φωτογράφους της Γάζας, <br>καθώς και η δημιουργία του<br>
-														συνοδευτικού e-booklet.</p>
-													<button onclick="closeModal('modal3')">Close</button>
-												</div>
-											</div>
-										<div id="movieModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 1000; justify-content: center; align-items: center;">
-											<div style="position: relative; width: 80%; max-width: 800px;">
-												<iframe id="movieFrame" src="" style="width: 100%; height: 450px; border: none;" allowfullscreen></iframe>
-												<button onclick="closeMovie();" style="position: absolute; top: 10px; right: 10px; background: red; color: white; border: none; padding: 10px; cursor: pointer;">Close</button>
-											</div>
-										</div>
-											
-										</div>
-								
-								
-								<footer class="major">
-									<!-- <ul class="actions special">
-										<li><a href=# class="button">Διαβάστε περισσότερα</a></li>
-									</ul> -->
-								</footer>
-							</section>
-							<section id="money" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Ανοιχτή πρόσβαση</h2>
-										</header>
-										<p style="font-size: medium;">
-											Το PIFF είναι εντελώς ανεξάρτητο και μη κερδοσκοπικό, αντι-εμπορικό με κύριο στόχο να διασφαλίσει ότι οι
-											παλαιστινιακές φωνές θα φτάσουν σε όσο το δυνατόν περισσότερα ακροατήρια, χωρίς αποκλεισμούς
-											-ιδιαίτερα για όσους έχουν λιγότερους πόρους.<br>
-											 Πιστεύουμε ότι η τέχνη και ο κινηματογράφος είναι
-											για τις μάζες και πρέπει να είναι προσβάσιμα σε όλους. Ως εκ τούτου, η πρόσβαση στο Φεστιβάλ είναι
-											δωρεάν και ανοιχτή σε όλους με <strong><a  style="color: red; font-size: medium;" href="https://4fund.com/el/n5847t"  target="_blank" >ελεύθερη συνεισφορά</a></strong>  
-											 για να καλυφθούν τα έξοδα της
-											τριήμερης διοργάνωσης .
-</p><ul class="actions">
-	<li><a  href="fund.html"  class="button">Διαβάστε περισσότερα</a></li>
-</ul>
-									</div>
-									<span class="image1" ><img src="images/new.jpg" alt="" /></span>
-								</div>
-							</section>
+                        <div class="visual-header">
+                            <div class="window-controls">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
 
-							</section> 
+                        <div class="visual-body">
 
-							<section id="money" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Φεστιβάλ Παλαιστινιακού κινηματογράφου Αθήνας</h2>
-										</header>
-										<p style="font-size: medium;">
-											Την φετινή χρονιά το PIFF πραγματοποιείται με την στήριξη και τη συνεργασία του Φεστιβάλ Παλαιστινιακού κινηματογράφου Αθήνας, ενώνοντας τις δυνάμεις τους για να ενδυναμώσουν τον Παλαιστινιακό κινηματογράφο και τις ιστορίες που προβάλλονται.
-</p><ul class="actions">
-	<li><a  href="https://www.facebook.com/p/Athens-Palestine-Film-Festival-100087426503131/" target="_blank"  class="button" style="font-size: small;">Φεστιβάλ Παλαιστινιακού  κινηματογράφου Αθήνας</a></li>
-</ul>
-									</div>
-									<span class="image1" ><img src="images/ac.png" alt="" /></span>
-								</div>
-							</section>
+                            <div class="visual-line large"></div>
+                            <div class="visual-line"></div>
+                            <div class="visual-line short"></div>
 
-							</section> 
+                            <div class="visual-grid">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+
+                            <div class="visual-footer"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Διοργανωτές</h2>
-							<div>
-								<span class="image"><img src="images/front.png" alt="antiratsistiko agiou nikolaou" style=" width: 200px; height: 200px; " /></span>
-								
-								<span class="image"><img src="images/steki.jpeg" alt="steki metanaston chania" style=" width: 200px; height: 200px; " /></span>
-								
-								<span class="image" id="prot"><img src="images/prot.jpeg" alt="protovoulia allileggiis gia tin antistekomeni palestini" style=" width: 560px; height: 210px; " /></span>
-							</div>
-							<div>
-								<p>
-									<a href="https://web.facebook.com/profile.php?id=61551916739831" target="_blank">Αντιρατσιστικό Φεστιβάλ Αγίου Νικολάου</a>  <br>
-									<a href="https://www.facebook.com/share/12K3RAsWASv/" target="_blank">Κοινωνικό Στέκι - Στέκι Μεταναστών Χανιά</a> <br>
-									<a href="#">Πρωτοβουλία για την Αντιστεκόμενη Παλαιστίνη</a> <br> 										 										
-									
-								</p>
-							</div>
-							<!-- <span class="image" id="nophoto" ><img src="images/new.jpg"  style=" width: 700px; height: 320px; " /></span> -->
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<!-- <li><a href=# class="button primary">Get Started</a></li>
-										<li><a href=# class="button">Learn More</a></li> -->
-										
-									</ul>
-								</footer>
-							</section>
+       
+        
 
-					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							
-							<h2 id="nophoto">Δείτε τις προηγούμενες μας δράσεις </h2>
-									
-							<ul class="actions" style="padding-left: 245px;" id="nophoto">
-								<a href="https://www.youtube.com/@AntiratsistikoFestivalAgiosNik" target="_blank" class="fa fa-youtube-square" 
-								style="font-size:64px;" id="nophoto"></a>
-							</ul>
-						</section>
-						<section>
-							<h2 >Eπικοινωνία μαζί μας</h2> 
-							<dl class="alt">
-								<!-- <dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd> -->
-								<!-- <dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd> -->
-								<dt >Email </dt>
-								<dd><a href="piffcretelemesos@gmail.com"> piffcretelemesos@gmail.com </dd>
-							</dl>
-							<ul class="icons">
-								<!-- <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li> -->
-								<!-- <li><a href="https://web.facebook.com/profile.php?id=61551916739831#" target="_blank"class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/antiracism_festival_agnikolaou/" target="_blank" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
-								
-								</a></li>
-								<!-- <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li> -->
-								<!-- <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li> -->
-							</ul>
-						</section>
-						<!-- <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
-					</footer>
+       
+        <section class="section about" id="about">
 
-			</div>
+            <div class="container about-grid">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-				function toggleMobileMenu() {
-					const menu = document.getElementById("mobileMenu");
-					menu.classList.toggle("active");
-				}
-			
-				function openModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = 'flex'; // Show the modal
-    }
-}
+                <div class="about-visual reveal">
+                    <div class="about-shape shape-one"></div>
+                    <div class="about-shape shape-two"></div>
 
-function closeModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = 'none'; // Hide the modal
-    }
-}
-function handleOutsideClick(event) {
-    const modalContent = event.currentTarget.querySelector('.modal-content');
-    if (!modalContent.contains(event.target)) {
-        event.currentTarget.style.display = 'none'; // Close the modal
-    }
-}
+                    <div class="about-card">
+                        <span>01</span>
+                        <strong>Simple.</strong>
+                        <p>Beautiful by default.</p>
+                    </div>
+                </div>
 
-				
-			</script>
-			<script>
-				document.addEventListener('DOMContentLoaded', function () {
-					const swiper = new Swiper('.swiper', {
-						loop: true, // Enable looping
-						slidesPerView: 3, // Number of slides visible at once
-						spaceBetween: 20, // Space between slides
-						navigation: {
-							nextEl: '.swiper-button-next',
-							prevEl: '.swiper-button-prev',
-						},
-						pagination: {
-							el: '.swiper-pagination',
-							clickable: true,
-						},
-						breakpoints: {
-							768: {
-								slidesPerView: 2, // Show 2 slides on medium screens
-							},
-							480: {
-								slidesPerView: 1, // Show 1 slide on small screens
-							},
-						},
-					});
-				});
-			</script>
-	</body>
 
+                <div class="about-content reveal">
+
+                    <div class="eyebrow">
+                        <span></span>
+                        Why us
+                    </div>
+
+                    <h2>
+                        Designed to be
+                        <strong>easy to customize.</strong>
+                    </h2>
+
+                    <p>
+                        Change the colors, typography, spacing and content
+                        to make this template your own. The structure is
+                        intentionally simple so you can move quickly.
+                    </p>
+
+                    <ul class="check-list">
+                        <li>Semantic HTML5 structure</li>
+                        <li>Mobile-first responsive CSS</li>
+                        <li>Accessible navigation</li>
+                        <li>Vanilla JavaScript interactions</li>
+                    </ul>
+
+                    <a href="contact.html" class="text-link">
+                        Start building <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+		<section class="section features" id="features">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <div class="eyebrow">
+                        <span></span>
+                        Προηγουμενα Φεστιβαλ
+                    </div>
+
+                    <h2>
+                        Everything is
+                        <strong>hera</strong>
+                    </h2>
+
+                    <p>
+                        A flexible foundation
+                    </p>
+                </div>
+
+
+                <div class="feature-grid">
+
+                    <article class="feature-card reveal">
+
+                        <div class="feature-icon">
+                            ✦
+                        </div>
+
+                        <h3>2023</h3>
+
+                        <p>
+                            1o festival agios nikolaos 2023
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card reveal">
+
+                        <div class="feature-icon">
+                            ◇
+                        </div>
+
+                        <h3>2024</h3>
+
+                        <p>
+                            2o festival agios nikolaos 2024
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card reveal">
+
+                        <div class="feature-icon">
+                            ↗
+                        </div>
+
+                        <h3>2025</h3>
+
+                        <p>
+                            3o festival agios nikolaos 2025
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+       
+        <section class="cta" id="contact">
+
+            <div class="container cta-content reveal">
+
+                <div>
+                    <div class="eyebrow">
+                        <span></span>
+                        Check this
+                    </div>
+
+                    <h2>
+                        Ready to create
+                        something great?
+                    </h2>
+
+                    <p>
+                        Turn your idea into a polished digital experience.
+                    </p>
+                </div>
+
+                <a href="mailto:hello@example.com"
+                   class="button button-light">
+                    Let's Talk
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#top" class="logo">
+    <img src="assets/imgs/1.png" alt="Antiratsistiko logo">
+    <span>Antiratsistiko</span>
+</a>
+
+                <p>
+Agios Nikolaos Festival
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Explore</h3>
+
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Social</h3>
+
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">X / Twitter</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <!-- <a href="mailto:hello@example.com">
+                    hello@example.com
+                </a>
+
+                <a href="tel:+1234567890">
+                    +1 234 567 890
+                </a> -->
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+<p id="copyright"></p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
 </html>
