@@ -2,13 +2,22 @@ const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-menu a");
 
+
+/* =========================
+   MOBILE MENU
+========================= */
+
 function closeMenu() {
     menuToggle.classList.remove("active");
     navMenu.classList.remove("active");
 
     menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.setAttribute("aria-label", "Open navigation menu");
+    menuToggle.setAttribute(
+        "aria-label",
+        "Open navigation menu"
+    );
 }
+
 
 menuToggle.addEventListener("click", () => {
 
@@ -27,6 +36,7 @@ menuToggle.addEventListener("click", () => {
             ? "Close navigation menu"
             : "Open navigation menu"
     );
+
 });
 
 
@@ -54,6 +64,7 @@ document.addEventListener("click", event => {
     ) {
         closeMenu();
     }
+
 });
 
 
@@ -68,9 +79,26 @@ window.addEventListener("resize", () => {
 });
 
 
+/* =========================
+   ESCAPE KEY
+========================= */
+
+document.addEventListener("keydown", event => {
+
+    if (event.key === "Escape") {
+        closeMenu();
+    }
+
+});
+
+
+/* =========================
+   SCROLL REVEAL
+========================= */
 
 const revealElements =
     document.querySelectorAll(".reveal");
+
 
 const revealObserver =
     new IntersectionObserver(
@@ -103,15 +131,241 @@ revealElements.forEach(element => {
 });
 
 
-
-document.addEventListener("keydown", event => {
-
-    if (event.key === "Escape") {
-        closeMenu();
-    }
+/* =========================
+   COPYRIGHT
+========================= */
 
 const currentYear = new Date().getFullYear();
 
-document.getElementById("copyright").innerHTML =
-    `© ${currentYear} Αντιρατσιστικό Φεστιβάλ Αγίου Νικολάου. All rights reserved.`;
-});
+const copyright =
+    document.getElementById("copyright");
+
+if (copyright) {
+
+    copyright.innerHTML =
+        `© ${currentYear} Αντιρατσιστικό Φεστιβάλ Αγίου Νικολάου. All rights reserved.`;
+
+}
+
+
+/* =========================
+   GALLERY / LIGHTBOX
+========================= */
+
+const galleryItems = [
+    ...document.querySelectorAll(".photo")
+];
+
+const lightbox =
+    document.querySelector("#lightbox");
+
+
+if (galleryItems.length && lightbox) {
+
+    const lightboxImage =
+        lightbox.querySelector(".lightbox-image");
+
+    const lightboxCaption =
+        lightbox.querySelector(".lightbox-caption");
+
+    const closeButton =
+        lightbox.querySelector(".lightbox-close");
+
+    const previousButton =
+        lightbox.querySelector(".lightbox-prev");
+
+    const nextButton =
+        lightbox.querySelector(".lightbox-next");
+
+
+    let currentIndex = 0;
+
+
+    function showPhoto(index) {
+
+        currentIndex =
+            (index + galleryItems.length)
+            % galleryItems.length;
+
+
+        const selectedPhoto =
+            galleryItems[currentIndex];
+
+
+        const image =
+            selectedPhoto.querySelector("img");
+
+
+        lightboxImage.src =
+            image.currentSrc || image.src;
+
+
+        lightboxImage.alt =
+            image.alt || "Gallery image";
+
+
+        lightboxCaption.textContent =
+            image.alt || "";
+
+
+        lightbox.classList.add("open");
+
+        document.body.classList.add(
+            "lightbox-open"
+        );
+
+
+        closeButton.focus();
+
+    }
+
+
+    function closeLightbox() {
+
+        lightbox.classList.remove(
+            "open"
+        );
+
+        document.body.classList.remove(
+            "lightbox-open"
+        );
+
+    }
+
+
+    galleryItems.forEach(
+        (item, index) => {
+
+            item.addEventListener(
+                "click",
+                () => {
+
+                    showPhoto(index);
+
+                }
+            );
+
+
+            /* Keyboard support */
+
+            item.addEventListener(
+                "keydown",
+                event => {
+
+                    if (
+                        event.key === "Enter" ||
+                        event.key === " "
+                    ) {
+
+                        event.preventDefault();
+
+                        showPhoto(index);
+
+                    }
+
+                }
+            );
+
+        }
+    );
+
+
+    closeButton.addEventListener(
+        "click",
+        closeLightbox
+    );
+
+
+    previousButton.addEventListener(
+        "click",
+        () => {
+
+            showPhoto(
+                currentIndex - 1
+            );
+
+        }
+    );
+
+
+    nextButton.addEventListener(
+        "click",
+        () => {
+
+            showPhoto(
+                currentIndex + 1
+            );
+
+        }
+    );
+
+
+    /* Click outside image to close */
+
+    lightbox.addEventListener(
+        "click",
+        event => {
+
+            if (
+                event.target === lightbox
+            ) {
+
+                closeLightbox();
+
+            }
+
+        }
+    );
+
+
+    /* Lightbox keyboard controls */
+
+    document.addEventListener(
+        "keydown",
+        event => {
+
+            if (
+                !lightbox.classList.contains("open")
+            ) {
+                return;
+            }
+
+
+            /* Escape */
+
+            if (event.key === "Escape") {
+
+                closeLightbox();
+
+            }
+
+
+            /* Previous */
+
+            if (
+                event.key === "ArrowLeft"
+            ) {
+
+                showPhoto(
+                    currentIndex - 1
+                );
+
+            }
+
+
+            /* Next */
+
+            if (
+                event.key === "ArrowRight"
+            ) {
+
+                showPhoto(
+                    currentIndex + 1
+                );
+
+            }
+
+        }
+    );
+
+}
