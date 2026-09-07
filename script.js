@@ -367,5 +367,88 @@ if (galleryItems.length && lightbox) {
 
         }
     );
+    document.addEventListener(
+        "keydown",
+        event => {
 
-}
+            if (
+                !lightbox.classList.contains("open")
+            ) {
+                return;
+            }
+
+            if (event.key === "Escape") {
+                closeLightbox();
+            }
+
+            if (
+                event.key === "ArrowLeft"
+            ) {
+                showPhoto(
+                    currentIndex - 1
+                );
+            }
+
+            if (
+                event.key === "ArrowRight"
+            ) {
+                showPhoto(
+                    currentIndex + 1
+                );
+            }
+
+        }
+    );
+
+} /* END OF GALLERY / LIGHTBOX */
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const backToTop =
+        document.getElementById("backToTop");
+
+    if (!backToTop) {
+        return;
+    }
+
+    function checkScroll() {
+
+        if (window.scrollY > 300) {
+
+            backToTop.classList.add("show");
+
+        } else {
+
+            backToTop.classList.remove("show");
+
+        }
+
+    }
+
+    window.addEventListener(
+        "scroll",
+        checkScroll,
+        { passive: true }
+    );
+
+    backToTop.addEventListener(
+        "click",
+        function () {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+    );
+
+    checkScroll();
+
+});
+

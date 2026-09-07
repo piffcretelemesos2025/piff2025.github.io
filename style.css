@@ -2745,12 +2745,165 @@ transition:
 
 }
 
-
 /* =========================================
-/* =========================================
-   READ MORE - RESPONSIVE EXPAND
+   FLOATING BACK TO TOP BUTTON
 ========================================= */
 
+.floating-back-to-top {
+    position: fixed !important;
+    right: 22px;
+    bottom: 22px;
+
+    width: 54px;
+    height: 54px;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999999 !important;
+
+    background: var(--accent);
+    color: #ffffff !important;
+
+    border: 0;
+    border-radius: 50%;
+
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+
+    text-decoration: none !important;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.floating-back-to-top:hover {
+    background: var(--accent-dark);
+    color: #ffffff !important;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+
+    .floating-back-to-top {
+        position: fixed !important;
+
+        right: 15px;
+        bottom: 15px;
+
+        width: 50px;
+        height: 50px;
+
+        display: flex !important;
+
+        z-index: 999999 !important;
+
+        font-size: 23px;
+
+        border-radius: 50%;
+    }
+
+    .floating-back-to-top:hover {
+        transform: none;
+    }
+}
+
+.back-to-top {
+    position: fixed !important;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 55px;
+    height: 55px;
+
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background: var(--accent);
+    color: #ffffff;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateY(20px);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+/* Button becomes visible */
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: translateY(0);
+}
+
+
+/* Hover */
+
+.back-to-top:hover {
+    background: var(--accent-dark);
+    transform: translateY(-5px);
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .back-to-top {
+        position: fixed !important;
+
+        right: 16px;
+        bottom: 16px;
+
+        width: 50px;
+        height: 50px;
+
+        font-size: 22px;
+
+        z-index: 99999;
+    }
+
+    .back-to-top:hover {
+        transform: none;
+    }
+
+}
 .read-more {
     margin-top: 20px;
     width: 100%;
