@@ -358,7 +358,7 @@ button {
 }
 
 .logo span {
-    color: var(--accent);
+    color: red;
 }
 
 .nav-menu {
@@ -543,7 +543,7 @@ button {
 
 .hero h1 strong {
     display: block;
-    color: var(--accent);
+    color: red;
 }
 
 .hero-text > p {
