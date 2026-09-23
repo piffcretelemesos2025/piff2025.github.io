@@ -68,7 +68,7 @@
     border: 0;
     border-radius: 50%;
 
-    background: var(--accent);
+    background: rgb(158, 49, 53);
     color: var(--white);
 
     font-size: 24px;
@@ -152,7 +152,7 @@
 
     display: block;
 
-    color: var(--accent);
+    color: rgb(158, 49, 53);
 }
 
 
@@ -245,7 +245,7 @@
 
     background: #f0edff;
 
-    color: var(--accent);
+    color: rgb(158, 49, 53);
 
     font-size: 1.2rem;
 }
@@ -279,7 +279,7 @@
 
 .contact-card a {
 
-    color: var(--accent);
+    color: rgb(158, 49, 53);
 
     font-size: 0.9rem;
 
@@ -414,7 +414,7 @@
 
     background: white;
 
-    border-color: var(--accent);
+    border-color: rgb(158, 49, 53);
 
     box-shadow:
         0 0 0 4px
@@ -422,10 +422,6 @@
 }
 
 
-
-/* =========================================
-   BUTTON
-========================================= */
 
 .contact-submit {
 
@@ -490,10 +486,6 @@
 }
 
 
-
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 900px) {
 

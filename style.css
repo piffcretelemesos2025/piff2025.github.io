@@ -33,7 +33,7 @@
 }
 
 .nav-button:hover {
-    background: var(--accent);
+    background:  R 158 G 49 B 53;
     transform: translateY(-2px);
 }
 
@@ -88,7 +88,7 @@
     margin-bottom: 20px;
 
     background: #f0edff;
-    color: var(--accent);
+    color: rgb(158, 49, 53);
 
     border-radius: 12px;
 
@@ -130,7 +130,7 @@
 }
 
 .logo-text > span {
-    color: var(--accent);
+    color: rgb(158, 49, 53);
 }
 
 .navbar-actions {
@@ -156,7 +156,7 @@
 }
 
 .get-started-toggle.active {
-    background: var(--accent);
+    background:  R 158 G 49 B 53;
 }
 
 
@@ -249,7 +249,7 @@
     width: 17px;
     height: 17px;
 
-    accent-color: var(--accent);
+    accent-color: rgb(158, 49, 53);
 
     cursor: pointer;
 }
@@ -358,7 +358,7 @@ button {
 }
 
 .logo span {
-    color: red;
+    color: rgb(158, 49, 53);
 }
 
 .nav-menu {
@@ -386,7 +386,7 @@ button {
     width: 0;
     height: 2px;
 
-    background: var(--accent);
+    background:  R 158 G 49 B 53;
 
     transition: width var(--transition);
 }
@@ -413,7 +413,7 @@ button {
 }
 
 .nav-button:hover {
-    background: var(--accent);
+    background:  R 158 G 49 B 53;
     transform: translateY(-2px);
 }
 
@@ -511,7 +511,7 @@ button {
 
     margin-bottom: 20px;
 
-    color: var(--accent);
+    color:  R 158 G 49 B 53;
 
     font-size: 0.78rem;
     font-weight: 700;
@@ -543,7 +543,7 @@ button {
 
 .hero h1 strong {
     display: block;
-    color: red;
+    color: rgb(158, 49, 53);
 }
 
 .hero-text > p {
@@ -601,7 +601,7 @@ button {
 }
 
 .button-primary:hover {
-    background: var(--accent);
+    background:  R 158 G 49 B 53;
 }
 
 .button-secondary {
@@ -636,7 +636,7 @@ button {
     border-radius: 50%;
 
     background: #eee;
-    color: var(--accent);
+    color: rgb(158, 49, 53);
 
     font-size: 0.7rem;
 }
@@ -799,7 +799,7 @@ button {
 
 .section-heading h2 strong,
 .about-content h2 strong {
-    color: var(--accent);
+    color:  R 158 G 49 B 53;
 }
 
 .section-heading p {
@@ -847,7 +847,7 @@ button {
     margin-bottom: 25px;
 
     background: #f0edff;
-    color: var(--accent);
+    color:  R 158 G 49 B 53;
 
     border-radius: 14px;
 
@@ -903,7 +903,7 @@ button {
     width: 270px;
     height: 270px;
 
-    background: var(--accent);
+    background:  R 158 G 49 B 53;
 
     opacity: 0.9;
 }
@@ -941,7 +941,7 @@ button {
 
     margin-bottom: 50px;
 
-    color: var(--accent);
+    color:  R 158 G 49 B 53;
 
     font-size: 0.8rem;
     font-weight: 700;
@@ -998,7 +998,7 @@ button {
     flex-shrink: 0;
 
     background: #f0edff;
-    color: var(--accent);
+    color:  R 158 G 49 B 53;
 
     border-radius: 50%;
 
@@ -1010,7 +1010,7 @@ button {
     align-items: center;
     gap: 10px;
 
-    color: var(--accent);
+    color:  R 158 G 49 B 53;
 
     font-weight: 700;
 }
@@ -1071,7 +1071,7 @@ button {
 }
 
 .button-light:hover {
-    background: var(--accent);
+    background:  R 158 G 49 B 53;
     color: white;
 }
 
@@ -1618,7 +1618,7 @@ button {
 /* KEYBOARD FOCUS */
 
 .photo:focus-visible {
-    outline: 3px solid var(--accent);
+    outline: 3px solid  R 158 G 49 B 53;
 
     outline-offset: 4px;
 }
@@ -1774,7 +1774,7 @@ button {
 .lightbox-close:hover,
 .lightbox-prev:hover,
 .lightbox-next:hover {
-    background: var(--accent);
+    background:  R 158 G 49 B 53;
 }
 
 .lightbox-prev:hover,
@@ -2455,7 +2455,7 @@ body.lightbox-open {
 .lightbox-close:hover,
 .lightbox-prev:hover,
 .lightbox-next:hover {
-    background: var(--accent);
+    background:  R 158 G 49 B 53;
 }
 
 
@@ -2630,7 +2630,7 @@ transition:
 
 .feature-year {
     margin-bottom: 10px;
-    color: var(--accent);
+    color:  R 158 G 49 B 53;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -2665,7 +2665,7 @@ transition:
     justify-content: space-between;
     cursor: pointer;
     list-style: none;
-    color: var(--accent);
+    color:  R 158 G 49 B 53;
     font-weight: 700;
     user-select: none;
 }
@@ -2680,7 +2680,7 @@ transition:
     justify-content: center;
     width: 28px;
     height: 28px;
-    border: 1px solid var(--accent);
+    border: 1px solid  R 158 G 49 B 53;
     border-radius: 50%;
     font-size: 20px;
     font-weight: 400;
@@ -2710,7 +2710,7 @@ transition:
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    color: var(--accent);
+    color:  R 158 G 49 B 53;
     font-weight: 700;
     text-decoration: none;
 }
@@ -2763,7 +2763,7 @@ transition:
 
     z-index: 999999 !important;
 
-    background: var(--accent);
+    background:  R 158 G 49 B 53;
     color: #ffffff !important;
 
     border: 0;
@@ -2838,7 +2838,7 @@ transition:
     border: none;
     border-radius: 50%;
 
-    background: var(--accent);
+    background:  R 158 G 49 B 53;
     color: #ffffff;
 
     font-size: 25px;
@@ -2918,7 +2918,7 @@ transition:
     padding: 10px 0;
     cursor: pointer;
 
-    color: var(--accent);
+    color:  R 158 G 49 B 53;
     font-size: 15px;
     font-weight: 700;
 
@@ -2942,7 +2942,7 @@ transition:
     width: 30px;
     height: 30px;
 
-    border: 1px solid var(--accent);
+    border: 1px solid  R 158 G 49 B 53;
     border-radius: 50%;
 
     font-size: 20px;
@@ -2980,7 +2980,7 @@ transition:
     display: inline-block;
     margin-top: 5px;
 
-    color: var(--accent);
+    color:  R 158 G 49 B 53;
     font-weight: 700;
     text-decoration: none;
 }
@@ -3101,7 +3101,7 @@ background:
     rgba(99, 91, 255, .10);
 
 color:
-    var(--accent);
+     R 158 G 49 B 53;
 
 font-size: 1.5rem;
 
@@ -3135,7 +3135,7 @@ YEAR
 margin-bottom: 8px;
 
 color:
-    var(--accent);
+     R 158 G 49 B 53;
 
 font-size: .75rem;
 
@@ -3187,7 +3187,7 @@ transition:
 
 
 color:
-    var(--accent);
+     R 158 G 49 B 53;
 
 
 }
@@ -3290,7 +3290,7 @@ margin-top: auto;
 padding-top: 25px;
 
 color:
-    var(--accent);
+     R 158 G 49 B 53;
 
 font-size: .88rem;
 
